@@ -22,7 +22,11 @@ contract FundMe {
         // ABI: 
         AggregatorV3Inteface pricefeed = AggregatorV3Inteface(0x694AA1769357215DE4FAC081bf1f309aDC325306);
         (, uint256 price, , , ) = priceFeed.latestRoundData();
-        return uint256(price = getPrice();
+        return uint256(price = getPrice(
+            uint ethPrice = getPrice();
+            uint256 ethAmountInUsd = (ethPrice * ethAmount) / 1e18;
+            return ethAmountInUsd;    
+        );
         
     }
 
