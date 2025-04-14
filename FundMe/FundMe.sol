@@ -6,7 +6,7 @@
 
 pragma solidity ^0.8.18;
 
-import {AggregatorV3Interface} from "@chainlink/contracts/src/v0.8/shared/interfaces/AggregatorV3Interface.sol";
+import {https://github.com/smartcontractkit/chainlink/blob/develop/contracts/src/v0.8/shared/interfaces/AggregatorV3Interface.sol} from "@chainlink/contracts/src/v0.8/shared/interfaces/AggregatorV3Interface.sol";
 
 contract FundMe {
     uint256 public minimumUsd = 5;
@@ -16,8 +16,9 @@ contract FundMe {
     }
 
     function getPrice() public {
-        // Address
-        // ABi
+        // Address: 0x694AA1769357215DE4FAC081bf1f309aDC325306 (this token was taken from Price Fees, from Feeds Addresses, at Chainlink Docs website: https://docs.chain.link/data-feeds/price-feeds/addresses?page=1
+        // ABI: 
+        AggregatorV3Inteface(0x694AA1769357215DE4FAC081bf1f309aDC325306).version();
     }
 
     function getConversionRate() public {}
