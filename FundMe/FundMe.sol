@@ -22,15 +22,19 @@ contract FundMe {
         // ABI: 
         AggregatorV3Inteface pricefeed = AggregatorV3Inteface(0x694AA1769357215DE4FAC081bf1f309aDC325306);
         (, uint256 price, , , ) = priceFeed.latestRoundData();
-        return uint256(price = getPrice(
-            uint ethPrice = getPrice();
-            uint256 ethAmountInUsd = (ethPrice * ethAmount) / 1e18;
-            return ethAmountInUsd;    
-        );
-        
+        return uint256(price * 1e10);
+        //    uint ethPrice = getPrice();
+        //   uint256 ethAmountInUsd = (ethPrice * ethAmount) / 1e18;
+        //  return ethAmountInUsd;    
     }
 
-    function getConversionRate() public {}
+    function getConversionRate() public {
+        uint256 ethPrice = getPrice();
+	uint256 ethAmountInUsd = (ethPrice * ethAmount) / 1e18;
+	return ethAmountInUsd;
+    }
 
-    function getVersion() public view returns (uint256) {}
+    function getVersion() public view returns (uint256) {
+        return AggregatorV3Interface(0x694AA1769357215DE4FAC081bf1f309aDC325306).version();
+    }
 }
