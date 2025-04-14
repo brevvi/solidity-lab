@@ -20,7 +20,10 @@ contract FundMe {
     function getPrice() public {
         // Address: 0x694AA1769357215DE4FAC081bf1f309aDC325306 (this token was taken from Price Fees, from Feeds Addresses, at Chainlink Docs website: https://docs.chain.link/data-feeds/price-feeds/addresses?page=1
         // ABI: 
-        AggregatorV3Inteface(0x694AA1769357215DE4FAC081bf1f309aDC325306).version();
+        AggregatorV3Inteface pricefeed = AggregatorV3Inteface(0x694AA1769357215DE4FAC081bf1f309aDC325306);
+        (, uint256 price, , , ) = priceFeed.latestRoundData();
+        return uint256(price = getPrice();
+        
     }
 
     function getConversionRate() public {}
