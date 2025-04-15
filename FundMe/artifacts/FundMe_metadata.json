@@ -4,7 +4,55 @@
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [],
+		"abi": [
+			{
+				"inputs": [],
+				"name": "fund",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "gasPrice",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getConversionRate",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getVersion",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "minimumUsd",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
 		"devdoc": {
 			"kind": "dev",
 			"methods": {},
@@ -18,7 +66,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"FundMe.sol": "FundMe"
+			"FundMe/FundMe.sol": "FundMe"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -32,12 +80,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"FundMe.sol": {
-			"keccak256": "0x0f08a29fa767d36009ce1295ff332330365e40538bd27b5ca22c2dc99a6800e5",
+		"FundMe/FundMe.sol": {
+			"keccak256": "0xb44d4bfabc0030941e39414300a6b83a02de8ec818495b18a5b2ef966a91cfa0",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://479a99e8773cf24b7a52e4944c231fa4c754b91e28f3d45e0bc23e7bbc262d12",
-				"dweb:/ipfs/QmWonqW8hPu3ePegsw9oFy4iwwmDNk3qDg5vd1YoFAtSu7"
+				"bzz-raw://8417f433b7fcc07e2c551992f9ada272054f22ab2e8966c0bdad3e0053ce4ef5",
+				"dweb:/ipfs/QmSLFZeBPC1KdBMjC4T4ezKQ25FpgvTJ3D2ga7K217rxFV"
 			]
 		}
 	},
